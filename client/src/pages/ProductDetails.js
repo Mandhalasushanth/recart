@@ -33,7 +33,7 @@ function ProductDetails() {
 
     fetchProduct();
 
-  }, []);
+  }, [fetchProduct]);
 
   const fetchProduct =
     async () => {
