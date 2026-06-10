@@ -30,7 +30,7 @@ function MyListings() {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/products"
+            "https://recart-1.onrender.com/api/products"
           );
 
         setProducts(data);
@@ -58,7 +58,7 @@ function MyListings() {
       try {
 
         await axios.delete(
-          `http://localhost:5000/api/products/${id}`
+          `https://recart-1.onrender.com/api/products/${id}`
         );
 
         setProducts(

@@ -32,7 +32,7 @@ function ProductDetails() {
   const fetchProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/products/${id}`
+        `https://recart-1.onrender.com/api/products/${id}`
       );
 
       setProduct(data);
@@ -68,7 +68,7 @@ Please tell:
 `;
 
       const { data } = await axios.post(
-        "http://localhost:5000/api/ai/chat",
+        "https://recart-1.onrender.com/api/ai/chat",
         {
           message: prompt,
         }

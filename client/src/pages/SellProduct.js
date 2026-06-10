@@ -62,7 +62,7 @@ function SellProduct() {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/products",
+        "https://recart-1.onrender.com/api/products",
         formDataToSend,
         {
           headers: {
