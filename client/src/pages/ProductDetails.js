@@ -28,32 +28,21 @@ function ProductDetails() {
 
   const [loadingAI, setLoadingAI] =
     useState(false);
+ useEffect(() => {
+  const fetchProduct = async () => {
+    try {
+      const { data } = await axios.get(
+        `http://localhost:5000/api/products/${id}`
+      );
 
-  useEffect(() => {
+      setProduct(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-    fetchProduct();
-
-  }, [id]);
-
-  const fetchProduct =
-    async () => {
-
-      try {
-
-        const { data } =
-          await axios.get(
-            `http://localhost:5000/api/products/${id}`
-          );
-
-        setProduct(data);
-
-      } catch (error) {
-
-        console.log(error);
-
-      }
-
-    };
+  fetchProduct();
+}, [id]);
 
   const handleAIAnalysis = async () => {
     try {
