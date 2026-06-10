@@ -2,6 +2,19 @@
 
 ReCart is a full-stack web application that allows users to buy and sell used products online. Users can upload product listings with images, explore available products, view detailed product information, and connect directly with sellers through WhatsApp. The platform also includes an AI-powered product analysis feature that helps buyers evaluate whether a listed product is worth purchasing.
 
+
+
+## 🌐 Live Demo
+
+### Frontend (Vercel)
+🔗 https://recart-git-main-mandhalasushanths-projects.vercel.app/
+
+### Backend API (Render)
+🔗 https://recart-1.onrender.com
+
+### Products API Endpoint
+🔗 https://recart-1.onrender.com/api/products
+
 **Features**
 User Registration and Login
 Product Listing with Image Upload
@@ -29,6 +42,10 @@ Multer
 AI Integration
 Groq API (LLM-based Product Analysis)
 
+### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
 
 **Project Structure**
 
@@ -37,11 +54,11 @@ Groq API (LLM-based Product Analysis)
 /server → Node.js & Express Backend
 
 **Installation**
-Frontend
+**Frontend**
 cd client
 npm install
 npm start
-Backend
+**Backend**
 cd server
 npm install
 npm run dev
